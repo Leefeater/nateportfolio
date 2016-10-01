@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+<button onClick="createListing()">hit me</button>
+<button onClick="getListing()">hit me</button>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+function getListing() {
+$.ajax({
+  url: "https://sparkapi.com/v1/listings?_filter=PropertyType%20Eq%20'A'&_pagination=1&_limit=2",
+  dataType: 'json',
+  success: function(data) {
+  	console.log(data.BathsFull)
+  }
+})
+}
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+  background-color: #40a040;
+  text-align:center;
+  color:#eee;
+
+ 
+}
+#inGame,
+#winner,
+#loser,
+#tie,
+#playAgain,
+#faceDown
+ {
+	display:none;
+}
+
+header {
+	height:50px;
+	width:100%;
+	background:#111;
+}
+
+img {
+	height:200px;
+	width:150px;
+	display:inline-block;
+	float:left;
+}
+.player {
+	float:left;
+	height:300px;
+	width:50%;
+	margin:10px auto;
+}
+.dealer {
+	float:right;
+	height:00px;
+	width:50%;
+	margin:10px auto
+}
+.dealer img {
+	float:right;
+}
+.results {
+	margin:0px auto;	
+	left:auto;
+}
+.results h1 {
+	font-size:100px; 
+}
+
+.game-controls {
+	height:100px;
+	clear:both;
+}
